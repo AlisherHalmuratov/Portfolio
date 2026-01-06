@@ -2,7 +2,7 @@
 
 Personal portfolio website.
 
-🌐 Live: [https://afix.github.io/portfolio](https://alisherhalmuratov.github.io/Portfolio/)
+🌐 Live: [https://alisherhalmuratov.github.io/Portfolio/](https://alisherhalmuratov.github.io/Portfolio/)
 
 ## Technologies
 - HTML
