@@ -7,7 +7,7 @@
 :root {
   --bg-light: #1a1a1a;
   --bg-dark: #0b0b0b;
-  --bg-nav: #0b0b0bf3;
+  --bg-nav: #0b0b0bee;
   --text-light: #f2f2f2;
   --text-dark: #9ca3af;
   --accent: #ef4444;
@@ -97,6 +97,7 @@ ul {
   align-items: center;
   padding: 18px 32px;
   background-color: var(--bg-nav);
+  backdrop-filter: blur(5px);
   box-shadow: var(--shadow-lg);
   border-radius: 16px;
   z-index: 1000;
@@ -114,11 +115,23 @@ ul {
 }
 
 .nav_links {
+  position: relative;
   transition: all 0.2s ease;
 }
 
-.nav_links:hover {
-  color: var(--accent);
+.nav_links::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  left: 0;
+  height: 3px;
+  bottom: -5px;
+  background-color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.nav_links:hover::after {
+  width: 100%;
 }
 
 .logo {
@@ -209,6 +222,7 @@ ul {
   border: 2px solid var(--text-light);
   min-height: 300px;
   width: 100%;
+  position: relative;
   overflow: hidden;
   border-radius: 15px;
   transition: all 0.3s ease;
@@ -217,6 +231,21 @@ ul {
 .project_item:hover {
   box-shadow: var(--shadow-lg);
   transform: translateY(-5px) scale(1.02);
+  opacity: 1;
+}
+
+.project_item::after {
+  content: "Coming Soon";
+  font-size: 20px;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.project_item:hover::after {
   opacity: 1;
 }
 
@@ -272,6 +301,10 @@ ul {
 
 .contact_img img:hover {
   background-color: var(--accent);
+}
+
+.site-information {
+  font-size: 13px;
 }
 
 .footer {
@@ -494,6 +527,10 @@ ul {
   .info_img {
     width: 150px;
     display: none;
+  }
+
+  .site-information {
+    font-size: 10px;
   }
 }
 
