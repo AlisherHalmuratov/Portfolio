@@ -555,6 +555,11 @@ strong {
     width: 50px;
   }
 
+  .project_skillsbox-btn {
+    padding: 8px 13px;
+    font-size: 13px;
+  }
+
   .contact_title {
     margin-bottom: 10px;
   }
@@ -629,10 +634,8 @@ strong {
   }
 
   .project_skillsbox-btn {
-    /* display: none; */
-    padding: 10px 15px;
-    font-size: 15px;
-    min-width: 103.36px;
+    padding: 5px 10px;
+    font-size: 10px;
   }
 
   .about {
