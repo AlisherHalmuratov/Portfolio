@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="home" class="header">
@@ -33,7 +34,9 @@
             <span></span>
           </button>
         </div>
-        <h1 class="header_title">
+      </div>
+      <div class="header_bottom">
+        <h1 class="header_title" data-aos="fade-up" data-aos-duration="1500">
           Hi, I'm Alisher <br />
           Frontend Developer.
         </h1>
@@ -41,7 +44,13 @@
     </header>
 
     <main class="main">
-      <section id="about" class="section_about-skills section-box">
+      <section
+        id="about"
+        class="section_about-skills section-box"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+      >
         <div class="container">
           <div class="about">
             <h2 class="about_title section_title">
@@ -85,102 +94,6 @@
               </div>
             </div>
           </div>
-          <div class="info-prog">
-            <div class="container">
-              <div class="info-prog_list">
-                <div class="info-prog_item info-prog_html">
-                  <img
-                    src="img/skills/html_original_logo_icon_146477.svg"
-                    alt=""
-                    class="info_img section_img"
-                  />
-                  <div class="info-prog_content">
-                    <h2 class="info-prog_item-title section_title">HTML</h2>
-                    <p class="info-prog_item-text section_text">
-                      HTML is the standard markup language for documents
-                      designed to be displayed in a web browser. It defines the
-                      structure of a web page. Think of it as the skeleton of a
-                      building. It uses "tags" (like h1, p, div) to tell the
-                      browser what is a heading, what is a paragraph, and where
-                      to put images.
-                    </p>
-                  </div>
-                </div>
-                <div class="info-prog_item info-prog_css">
-                  <img
-                    src="img/skills/css_original_logo_icon_146575.svg"
-                    alt=""
-                    class="info_img section_img"
-                  />
-                  <div class="info-prog_content">
-                    <h2 class="info-prog_item-title section_title">CSS</h2>
-                    <p class="info-prog_item-text section_text">
-                      CSS is a style sheet language used for describing the
-                      presentation of a document written in HTML. If HTML is the
-                      skeleton, CSS is the skin, clothes, and paint. It controls
-                      colors, fonts, spacing, and how elements are positioned on
-                      the screen. It allows you to make your website look
-                      beautiful and responsive on different devices.
-                    </p>
-                  </div>
-                </div>
-                <div class="info-prog_item info-prog_js">
-                  <img
-                    src="img/skills/javascript_icon_130900.svg"
-                    alt=""
-                    class="info_img section_img"
-                  />
-                  <div class="info-prog_content">
-                    <h2 class="info-prog_item-title section_title">
-                      JavaScript
-                    </h2>
-                    <p class="info-prog_item-text section_text">
-                      JavaScript is a programming language that allows you to
-                      create interactive and dynamic content. While HTML and CSS
-                      give a page structure and style, JavaScript gives it
-                      "behavior." It handles things like button clicks,
-                      animations, data updates without refreshing the page, and
-                      complex logic.
-                    </p>
-                  </div>
-                </div>
-                <div class="info-prog_item info-prog_python">
-                  <img
-                    src="img/skills/file_type_python_icon_130221.svg"
-                    alt=""
-                    class="info_img section_img"
-                  />
-                  <div class="info-prog_content">
-                    <h2 class="info-prog_item-title section_title">Python</h2>
-                    <p class="info-prog_item-text section_text">
-                      Python is a high-level programming language known for its
-                      simplicity and readability. It is used in web development,
-                      data analysis, artificial intelligence, automation, and
-                      game development. Python is popular among beginners and
-                      professionals because of its clear syntax.
-                    </p>
-                  </div>
-                </div>
-                <div class="info-prog_item info-prog_git">
-                  <img
-                    src="img/skills/git_icon_130933.svg"
-                    alt=""
-                    class="info_img section_img"
-                  />
-                  <div class="info-prog_content">
-                    <h2 class="info-prog_item-title section_title">Git</h2>
-                    <p class="info-prog_item-text section_text">
-                      Git is a version control system that helps developers
-                      track changes in code. It allows working in teams, saving
-                      project history, and returning to previous versions if
-                      something goes wrong. Git is commonly used with platforms
-                      like GitHub and GitLab.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <section id="projects" class="section_projects section-box">
@@ -189,17 +102,109 @@
             Projects<span class="span_accent">.</span>
           </h2>
           <ul class="project_list">
-            <li class="project_item project-1">
-              <!-- <a target="_blank" href="#" class="project_link">
-                <img src="" alt="" />
-              </a>
-              <p class="project_text"></p> -->
+            <li
+              class="project_item project-1"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="0"
+            >
+              <article class="project_item-card">
+                <a
+                  target="_blank"
+                  href="https://alisherhalmuratov.github.io/Project---Area/"
+                  class="project_img-link"
+                >
+                  <img src="img/projects/1.jpg" alt="project" />
+                </a>
+                <h2 class="project_item-title">Area</h2>
+                <p class="project_item-text">
+                  Area is a platform for data analysis and visualization. It
+                  offers tools to track metrics, manage projects, and optimize
+                  workflows, helping teams make faster decisions and clearly
+                  present results for business or personal goals.
+                </p>
+                <div class="project_item-skillsbox">
+                  <ul class="project_skillsbox-list">
+                    <li class="project_skillsbox-item">
+                      <img
+                        src="img/skills/html_original_logo_icon_146477.svg"
+                        alt="html"
+                      />
+                    </li>
+                    <li class="project_skillsbox-item">
+                      <img
+                        src="img/skills/css_original_logo_icon_146575.svg"
+                        alt="css"
+                      />
+                    </li>
+                    <li class="project_skillsbox-item">
+                      <img
+                        src="img/skills/javascript_icon_130900.svg"
+                        alt="js"
+                      />
+                    </li>
+                  </ul>
+                  <a
+                    href="https://alisherhalmuratov.github.io/Project---Area/"
+                    class="project_skillsbox-btn"
+                    target="_blank"
+                  >
+                    Project link
+                  </a>
+                </div>
+              </article>
             </li>
-            <li class="project_item project-2">
-              <!-- <a target="_blank" href="#" class="project_link">
-                <img src="" alt="" />
-              </a>
-              <p class="project_text"></p> -->
+            <li
+              class="project_item project-2"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <!-- <article class="project_item-card">
+                <a
+                  target="_blank"
+                  href="https://alisherhalmuratov.github.io/Project---Area/"
+                  class="project_img-link"
+                >
+                  <img src="img/projects/1.jpg" alt="project" />
+                </a>
+                <h2 class="project_item-title">Area</h2>
+                <p class="project_item-text">
+                  Area is a platform for data analysis and visualization. It
+                  offers tools to track metrics, manage projects, and optimize
+                  workflows, helping teams make faster decisions and clearly
+                  present results for business or personal goals.
+                </p>
+                <div class="project_item-skillsbox">
+                  <ul class="project_skillsbox-list">
+                    <li class="project_skillsbox-item">
+                      <img
+                        src="img/skills/html_original_logo_icon_146477.svg"
+                        alt="html"
+                      />
+                    </li>
+                    <li class="project_skillsbox-item">
+                      <img
+                        src="img/skills/css_original_logo_icon_146575.svg"
+                        alt="css"
+                      />
+                    </li>
+                    <li class="project_skillsbox-item">
+                      <img
+                        src="img/skills/javascript_icon_130900.svg"
+                        alt="js"
+                      />
+                    </li>
+                  </ul>
+                  <a
+                    href="https://alisherhalmuratov.github.io/Project---Area/"
+                    class="project_skillsbox-btn"
+                    target="_blank"
+                  >
+                    Project link
+                  </a>
+                </div>
+              </article> -->
             </li>
           </ul>
         </div>
@@ -277,5 +282,9 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
