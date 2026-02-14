@@ -17,10 +17,10 @@
           <nav class="navbar">
             <ul class="nav_list">
               <li class="nav_item">
-                <a href="#home" class="nav_links"> home </a>
+                <a href="#about" class="nav_links"> about me </a>
               </li>
               <li class="nav_item">
-                <a href="#about" class="nav_links"> about me </a>
+                <a href="#skills" class="nav_links"> skills </a>
               </li>
               <li class="nav_item">
                 <a href="#projects" class="nav_links"> projects </a>
@@ -46,13 +46,13 @@
     <main class="main">
       <section
         id="about"
-        class="section_about-skills section-box"
+        class="about section-box"
         data-aos="fade-up"
         data-aos-duration="1500"
         data-aos-delay="300"
       >
         <div class="container">
-          <div class="about">
+          <div class="about_inner">
             <h2 class="about_title section_title">
               About me<span class="span_accent">.</span>
             </h2>
@@ -63,40 +63,142 @@
               web applications and continuously improving my skills in front-end
               development.
             </p>
-            <div class="skills">
-              <h2 class="skills_title section_title">Skills</h2>
-              <div class="skills_img-list">
+          </div>
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="skills section-box"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div class="container">
+          <div class="skills_inner">
+            <h2 class="skills_title section_title">
+              Skills<span class="span_accent">.</span>
+            </h2>
+            <div class="skills_img-list">
+              <div
+                class="skills_imgbox"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <img
                   src="img/skills/html_original_logo_icon_146477.svg"
                   alt="html"
                   class="skills_img skills_html section_img"
                 />
+                <div class="skills_textbox">
+                  <div class="skills_textbox">
+                    <h3 class="skills_textbox-title">HTML</h3>
+                    <p class="skills_textbox-text">
+                      HTML (HyperText Markup Language) is the most basic
+                      building block of the Web. It defines the meaning and
+                      structure of web content. Other technologies besides HTML
+                      are generally used to describe a web page's
+                      appearance/presentation (CSS) or functionality/behavior
+                      (JavaScript).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skills_imgbox"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <img
                   src="img/skills/css_original_logo_icon_146575.svg"
                   alt="css"
                   class="skills_img skills_css section_img"
                 />
+                <div class="skills_textbox">
+                  <h3 class="skills_textbox-title">CSS</h3>
+                  <p class="skills_textbox-text">
+                    Cascading Style Sheets (CSS) is a stylesheet language used
+                    to describe the presentation of a document written in HTML
+                    or XML (including XML dialects such as SVG, MathML or
+                    XHTML). CSS describes how elements should be rendered on
+                    screen, on paper, in speech, or on other media.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="skills_imgbox"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <img
                   src="img/skills/javascript_icon_130900.svg"
                   alt="js"
                   class="skills_img skills_js section_img"
                 />
+                <div class="skills_textbox">
+                  <h3 class="skills_textbox-title">JavaScript</h3>
+                  <p class="skills_textbox-text">
+                    JavaScript (JS) is a lightweight interpreted (or
+                    just-in-time compiled) programming language with first-class
+                    functions. While it is most well-known as the scripting
+                    language for Web pages, many non-browser environments also
+                    use it, such as Node.js, Apache CouchDB and Adobe Acrobat.
+                    JavaScript is a prototype-based, supporting multiple
+                    paradigms such as imperative, functional, and
+                    object-oriented. garbage-collected, dynamic language,
+                  </p>
+                </div>
+              </div>
+              <div
+                class="skills_imgbox"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <img
                   src="img/skills/file_type_python_icon_130221.svg"
                   alt="python"
                   class="skills_img skills_python section_img"
                 />
+                <div class="skills_textbox">
+                  <h3 class="skills_textbox-title">Python</h3>
+                  <p class="skills_textbox-text">
+                    Python is a high-level, general-purpose programming
+                    language. Its design philosophy emphasizes code readability
+                    with the use of significant indentation. Python is
+                    dynamically type-checked and garbage-collected. It supports
+                    multiple programming paradigms, including structured
+                    (particularly procedural), object-oriented and functional
+                    programming.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="skills_imgbox"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <img
                   src="img/skills/git_icon_130933.svg"
                   alt="git"
                   class="skills_img skills_git section_img"
                 />
+                <div class="skills_textbox">
+                  <h3 class="skills_textbox-title">Git</h3>
+                  <p class="skills_textbox-text">
+                    Git is a distributed version control software. Version
+                    control is a way to save changes over time without
+                    overwriting previous versions. Being distributed means that
+                    every developer working with a Git repository has a copy of
+                    that entire repository – every commit, every branch, every
+                    file. If you're used to working with centralized version
+                    control systems, this is a big difference!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <div class="skills_learn"></div>
         </div>
       </section>
-      <section id="projects" class="section_projects section-box">
+      <section id="projects" class="projects section-box">
         <div class="container">
           <h2 class="project_title section_title">
             Projects<span class="span_accent">.</span>
@@ -230,7 +332,7 @@
               </a>
             </li>
             <li class="contact_item">
-              <a class="contact_link" href="tel::+998770156009">
+              <a class="contact_link" href="tel:+998770156009">
                 <img src="img/contact/phone.svg" alt="" />
                 +998 77 015 6009
               </a>
